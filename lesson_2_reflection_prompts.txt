@@ -1,18 +1,54 @@
-What happens when you initialize a repository? Why do you need to do it?
+﻿What happens when you initialize a repository?
+An empty repository is created witout any commits git init
+
+Why do you need to do it?
+we need it to create git repository to check status use git status
+
+
 
 How is the staging area different from the working directory and the repository?
+git add is used to add files to the staging area. Use git reset to remove file from staging area 
+
+
 What value do you think it offers?
+
+
+It gives us an intermediate space where we can place the files which we want to add in the repository
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+
+
+
+What are some situations when branches would be helpful in keeping your history 
 organized? How would branches help?
+
+
+Branches can be used if we want to create all new experimental feature but not sure if it will work or not. If we want to have new language in that case as well
+One of the most important feature is when multiple people are working on the same project in those cases branches really help
+
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
+
+
+What is the result of merging two branches together? 
+
+Why do we represent it in 
 the diagram the way we do?
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges 
 manually?
+
+
+
+Extra Note: git diff with no arguments will compare working directory files with staging area files
+            git diff --staged will compare staging area with most recent commit in the repository
+            git reset --hard will reset any changes in the working directory or staging area
+	    git branch will show current branches
+	    git merge master coins to merge two branches
+	    git show can be used to see the changes introduced in the current commit compared to its parent commit
+	    git branch -d coins to delete coins branch
